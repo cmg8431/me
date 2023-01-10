@@ -1,8 +1,7 @@
 export const reset = {
   '*': {
     margin: 0,
-    fontFamily:
-      "'Pretendard', 'Spoqa Han Sans Neo', 'Noto Sans KR', 'sans-serif'",
+    fontFamily: "'Pretendard', 'sans-serif'",
   },
 
   [`*, *::before, *::after`]: {
