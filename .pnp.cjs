@@ -29,8 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@types/node", "npm:18.11.18"],\
+            ["@types/prettier", "npm:2.7.2"],\
             ["@types/react", "npm:18.0.26"],\
             ["next", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:13.1.1"],\
+            ["prettier", "npm:2.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
@@ -183,6 +185,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/prettier", [\
+        ["npm:2.7.2", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.2-6b2e2f518f-b47d76a525.zip/node_modules/@types/prettier/",\
+          "packageDependencies": [\
+            ["@types/prettier", "npm:2.7.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/prop-types", [\
         ["npm:15.7.5", {\
           "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
@@ -265,8 +276,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["me", "workspace:."],\
             ["@types/node", "npm:18.11.18"],\
+            ["@types/prettier", "npm:2.7.2"],\
             ["@types/react", "npm:18.0.26"],\
             ["next", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:13.1.1"],\
+            ["prettier", "npm:2.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
@@ -356,6 +369,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.3.4"],\
             ["picocolors", "npm:1.0.0"],\
             ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prettier", [\
+        ["npm:2.8.1", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.1-be60b51821-4f21a0f126.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.8.1"]\
           ],\
           "linkType": "HARD"\
         }]\
