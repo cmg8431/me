@@ -5,3 +5,4 @@ node_modules
 .pnp.loager.mjs
 .next
 .eslintrc.js
+next.config.js
