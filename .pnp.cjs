@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@stitches/react", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:1.2.8"],\
             ["@types/eslint", "npm:8.4.10"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\
@@ -290,6 +291,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picocolors", "npm:1.0.0"],\
             ["tiny-glob", "npm:0.2.9"],\
             ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@stitches/react", [\
+        ["npm:1.2.8", {\
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "npm:1.2.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:1.2.8", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-45af05f0dc/0/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:1.2.8"],\
+            ["@types/react", "npm:18.0.26"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2594,6 +2617,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["me", "workspace:."],\
+            ["@stitches/react", "virtual:b3a565af24ff8414f921a6dba87421be2be687a2d6b89e154e45e5290b1b133eb4764803f3464efe7d1fd9506603843dac3afdd8ebc8ddb2123a0d1a2dc9dfe4#npm:1.2.8"],\
             ["@types/eslint", "npm:8.4.10"],\
             ["@types/node", "npm:18.11.18"],\
             ["@types/prettier", "npm:2.7.2"],\
