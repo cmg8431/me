@@ -1,5 +1,6 @@
-import { colors, sizes, utils, media, reset } from '@/styles';
 import { createStitches } from '@stitches/react';
+
+import { colors, sizes, utils, media, reset } from './styles';
 
 export const {
   styled,
