@@ -13,4 +13,8 @@ export const DefaultLayout = styled('div', {
 
 export const DefaultLayoutWrapper = styled('main', {
   width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  maxWidth: '1050px',
+  padding: '2rem',
 });
