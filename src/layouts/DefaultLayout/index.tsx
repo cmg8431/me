@@ -1,4 +1,4 @@
-import { Header, SideNavbar } from '@/components';
+import { Navbar } from '@/components/common/Navbar';
 
 import * as S from './styled';
 
@@ -9,11 +9,8 @@ interface DefaultLayoutProps {
 export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <S.DefaultLayoutContainer>
-      <Header />
-      <S.DefaultLayout>
-        <SideNavbar />
-        <S.DefaultLayoutWrapper>{children}</S.DefaultLayoutWrapper>
-      </S.DefaultLayout>
+      <Navbar />
+      {children}
     </S.DefaultLayoutContainer>
   );
 };
