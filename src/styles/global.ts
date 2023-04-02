@@ -15,7 +15,8 @@ export const reset = {
 
   body: {
     lineHeight: 1.5,
-    backgroundColor: '$gray-100',
+    backgroundColor: '$background',
+    transition: 'background 0.1s ease-in, color 0.1s ease-in',
     position: 'fixed',
     top: 0,
     left: 0,

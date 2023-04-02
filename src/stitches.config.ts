@@ -13,7 +13,7 @@ export const {
   config,
 } = createStitches({
   theme: {
-    ...colors.light,
+    colors: colors.light,
     ...sizes,
   },
   ...media,
@@ -25,5 +25,5 @@ export const globalStyles = globalCss({
 });
 
 export const darkTheme = createTheme('dark', {
-  ...colors.dark,
+  colors: colors.dark,
 });
