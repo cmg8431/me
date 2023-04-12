@@ -29,7 +29,7 @@ module.exports = {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'import/no-unresolved': 'error',
     'import/order': [
-      'error',
+      'warn',
       {
         groups: [
           'builtin',
