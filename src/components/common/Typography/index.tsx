@@ -16,16 +16,22 @@ interface TypographyProps {
   style?: React.CSSProperties;
   align?: 'right' | 'left' | 'center';
   p?: boolean;
-  fw?: '700' | '600' | '500' | '400' | '300' | '200' | '100';
+  fw?: '900' | '800' | '700' | '600' | '500' | '400' | '300' | '200' | '100';
 }
 
 const TypographyComponent = (element: TypographyStyledElement) => {
   const Component = element;
 
   return React.forwardRef<TypographyElement, TypographyProps>(
-    ({ children, p, align, fw }, ref) => {
+    ({ children, p, align, fw, style }, ref) => {
       return (
-        <Component ref={ref} fontWeight={fw} fontAlign={align} paragraph={p}>
+        <Component
+          ref={ref}
+          fontWeight={fw}
+          fontAlign={align}
+          paragraph={p}
+          style={style}
+        >
           {children}
         </Component>
       );

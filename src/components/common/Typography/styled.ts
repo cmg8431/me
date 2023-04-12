@@ -20,6 +20,12 @@ const globalTypoStyles = (
       },
     },
     fontWeight: {
+      '900': {
+        fontWeight: 900,
+      },
+      '800': {
+        fontWeight: 800,
+      },
       '700': {
         fontWeight: 700,
       },
