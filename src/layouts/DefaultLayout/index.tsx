@@ -1,4 +1,6 @@
+import { Footer } from '@/components';
 import { Navbar } from '@/components/common/Navbar';
+import { motion } from 'framer-motion';
 
 import * as S from './styled';
 
@@ -10,7 +12,14 @@ export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <S.DefaultLayoutContainer>
       <Navbar />
-      {children}
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
+        {children}
+      </motion.main>
+      <Footer />
     </S.DefaultLayoutContainer>
   );
 };

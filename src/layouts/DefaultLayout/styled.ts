@@ -7,4 +7,5 @@ export const DefaultLayoutContainer = styled('div', {
   marginLeft: 'auto',
   marginRight: 'auto',
   maxWidth: '700px',
+  overflowY: 'auto',
 });
