@@ -35,18 +35,18 @@ export const Navbar = () => {
           ME
         </S.NavbarLogoContainer>
         <S.NavbarMenuItemContainer>
-          <S.ToggleButton>
+          {/* <S.ToggleButton>
             <FontAwesomeIcon icon={faLanguage} />
-          </S.ToggleButton>
+          </S.ToggleButton> */}
           <S.ToggleButton onClick={handleOnClickChangeTheme}>
             <FontAwesomeIcon icon={faMoon} />
           </S.ToggleButton>
-          <S.ToggleButton>
+          {/* <S.ToggleButton>
             <FontAwesomeIcon icon={faWineGlass} />
-          </S.ToggleButton>
+          </S.ToggleButton> */}
           <S.IconToggleButton>
             최민기님
-            <FontAwesomeIcon icon={faChevronDown} />
+            {/* <FontAwesomeIcon icon={faChevronDown} /> */}
           </S.IconToggleButton>
         </S.NavbarMenuItemContainer>
       </S.NavbarMenuContainer>

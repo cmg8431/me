@@ -15,6 +15,8 @@ export const NavbarConatiner = styled('nav', {
   flexDirection: 'column',
   margin: '0.9rem 0',
   gap: '4px',
+  paddingBottom: '0.7rem',
+  borderBottom: '1px solid $gray100',
 });
 
 export const NavbarMenuContainer = styled('div', {
