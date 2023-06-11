@@ -2,19 +2,17 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 
 import { GiphyGIF } from '@/assets';
-import {
-  faBars,
-  faChevronDown,
-  faLanguage,
-  faMagnifyingGlass,
-  faMoon,
-  faWineGlass,
-} from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Tabs } from '../Tabs';
 import * as S from './styled';
 
-export const Navbar = () => {
+interface NavbarProps {
+  isTabs?: boolean;
+}
+
+export const Navbar = ({ isTabs }: NavbarProps) => {
   const { theme, setTheme } = useTheme();
 
   const handleOnClickChangeTheme = () => {
@@ -35,36 +33,23 @@ export const Navbar = () => {
           ME
         </S.NavbarLogoContainer>
         <S.NavbarMenuItemContainer>
-          {/* <S.ToggleButton>
-            <FontAwesomeIcon icon={faLanguage} />
-          </S.ToggleButton> */}
           <S.ToggleButton onClick={handleOnClickChangeTheme}>
-            <FontAwesomeIcon icon={faMoon} />
+            <FontAwesomeIcon icon={faMoon} size="lg" />
           </S.ToggleButton>
-          {/* <S.ToggleButton>
-            <FontAwesomeIcon icon={faWineGlass} />
-          </S.ToggleButton> */}
-          <S.IconToggleButton>
-            최민기님
-            {/* <FontAwesomeIcon icon={faChevronDown} /> */}
-          </S.IconToggleButton>
-        </S.NavbarMenuItemContainer>
-      </S.NavbarMenuContainer>
-
-      <S.NavbarMenuContainer>
-        <S.IconToggleButton style={{ position: 'relative', right: '6px' }}>
-          <FontAwesomeIcon icon={faBars} />
-          카테고리
-        </S.IconToggleButton>
-        <S.NavbarMenuItemContainer>
-          <S.ToggleButton>홈</S.ToggleButton>
-          <S.ToggleButton>프로필</S.ToggleButton>
-          <S.ToggleButton>블로그</S.ToggleButton>
           <S.ToggleButton>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
           </S.ToggleButton>
         </S.NavbarMenuItemContainer>
       </S.NavbarMenuContainer>
+      {isTabs && (
+        <Tabs
+          menu={[
+            { to: '', text: '홈' },
+            { to: 'blog', text: '블로그' },
+            { to: 'dog', text: '도구' },
+          ]}
+        />
+      )}
     </S.NavbarConatiner>
   );
 };

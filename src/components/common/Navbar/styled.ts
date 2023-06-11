@@ -16,7 +16,6 @@ export const NavbarConatiner = styled('nav', {
   margin: '0.9rem 0',
   gap: '4px',
   paddingBottom: '0.7rem',
-  borderBottom: '1px solid $gray100',
 });
 
 export const NavbarMenuContainer = styled('div', {
@@ -27,7 +26,7 @@ export const NavbarMenuContainer = styled('div', {
 
 export const NavbarMenuItemContainer = styled('ul', {
   display: 'flex',
-  gap: '2px`',
+  gap: '4px',
 });
 
 export const ToggleButton = styled('div', {
