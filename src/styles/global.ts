@@ -1,7 +1,8 @@
 export const reset = {
   '*': {
     margin: 0,
-    fontFamily: "'Pretendard', 'sans-serif'",
+    fontFamily:
+      "'SUIT Variable', 'SUIT', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'sans-serif'",
   },
 
   [`*, *::before, *::after`]: {
@@ -14,7 +15,8 @@ export const reset = {
 
   body: {
     lineHeight: 1.5,
-    backgroundColor: '$gray-100',
+    backgroundColor: '$background',
+    // transition: 'background 0s ease-in, color 0.1s ease-in',
     position: 'fixed',
     top: 0,
     left: 0,
