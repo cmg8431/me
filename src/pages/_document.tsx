@@ -23,10 +23,12 @@ export default class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
           <link
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+            href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
             rel="stylesheet"
-            as="style"
-            crossOrigin=""
+          />
+          <link
+            href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+            rel="stylesheet"
           />
         </Head>
         <body>
