@@ -6,6 +6,6 @@ export const DefaultLayoutContainer = styled('div', {
   padding: '0rem 1rem',
   marginLeft: 'auto',
   marginRight: 'auto',
-  maxWidth: '750px',
+  maxWidth: '650px',
   overflowY: 'auto',
 });
