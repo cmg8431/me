@@ -12,6 +12,7 @@ module.exports = {
     'prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:storybook/recommended',
   ],
   plugins: ['prettier', 'import', 'react', 'react-hooks', 'jsx-a11y'],
   rules: {
