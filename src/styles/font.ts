@@ -13,7 +13,7 @@ export const font = localFont({
       style: 'normal',
     },
     {
-      path: '../../public/fonts/pretendard-semiBold.woff2',
+      path: '../../public/fonts/pretendard-semi-bold.woff2',
       weight: '600',
       style: 'normal',
     },
