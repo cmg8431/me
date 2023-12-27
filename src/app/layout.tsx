@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
-import { font } from '@/styles';
+import { NextThemesProvider } from '@/providers';
+import { darkTheme, font, lightTheme } from '@/styles';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -15,7 +16,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={font.className}>
-      <body>{children}</body>
+      <body>
+        <NextThemesProvider
+          storageKey="theme"
+          attribute="class"
+          value={{
+            light: lightTheme,
+            dark: darkTheme,
+          }}
+        >
+          {children}
+        </NextThemesProvider>
+      </body>
     </html>
   );
 }

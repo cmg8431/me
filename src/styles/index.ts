@@ -1,2 +1,2 @@
-export * from './colors';
+export * from './vars.css';
 export * from './font';
