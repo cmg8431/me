@@ -1,8 +1,9 @@
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
 
+import { Toast } from '@/components';
 import { NextThemesProvider } from '@/providers';
 import { darkTheme, font, lightTheme } from '@/styles';
-import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -25,6 +26,7 @@ export default function RootLayout({
             dark: darkTheme,
           }}
         >
+          <Toast />
           {children}
         </NextThemesProvider>
       </body>
