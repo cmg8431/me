@@ -1,9 +1,11 @@
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
 
-import { Toast } from '@/components';
+import { Header, Toast } from '@/components';
 import { NextThemesProvider } from '@/providers';
 import { darkTheme, font, lightTheme } from '@/styles';
+
+import * as styles from './layout.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={font.className}>
-      <body>
+      <body className={styles.container}>
         <NextThemesProvider
           storageKey="theme"
           attribute="class"
@@ -27,7 +29,8 @@ export default function RootLayout({
           }}
         >
           <Toast />
-          {children}
+          <Header />
+          <main>{children}</main>
         </NextThemesProvider>
       </body>
     </html>
