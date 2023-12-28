@@ -4312,6 +4312,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/dynamic@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@vanilla-extract/dynamic@npm:2.1.0"
+  dependencies:
+    "@vanilla-extract/private": "npm:^1.0.3"
+  checksum: dcb8149bd815c4be75184f90e350750b6bc16ffdb5841f62f7211385478589dc0a0b261a442011149c2edbdbd83a956a425eec94f6c735f269a1cdb310541a66
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/integration@npm:^6.0.0":
   version: 6.2.4
   resolution: "@vanilla-extract/integration@npm:6.2.4"
@@ -5808,6 +5817,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: 2176952b3649293473999a95d7bebfc9dc96410f6cbd3d2595cf12fd401f63a4bf41a7adbfd3ab2ff09ed60cb9870c58c6acdd18b87767366fabfc163700f13b
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: c09f43b3144a0b7826b6b11b6a111b2c7440831004eecc02d333533c5e58ef0aa5f2dce071d3b25fbb8c8ea97b45df96c74bcc1d51c8c2027eb981931107b0cd
   languageName: node
   linkType: hard
 
@@ -9336,6 +9352,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jotai@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "jotai@npm:2.6.0"
+  peerDependencies:
+    "@types/react": ">=17.0.0"
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 8e1687453c3713d227c8081291e286b51ca634657dc456303b3d9f9bf80d67b4a5e71481768675a8480789b432e3b0c0159521ac7794df8a0cce989713fdc7a4
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -10089,8 +10120,10 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^5.47.1"
     "@typescript-eslint/parser": "npm:^5.47.1"
     "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/dynamic": "npm:^2.1.0"
     "@vanilla-extract/next-plugin": "npm:^2.3.2"
     "@vanilla-extract/recipes": "npm:^0.5.1"
+    clsx: "npm:^2.0.0"
     eslint: "npm:^8.30.0"
     eslint-config-prettier: "npm:^8.5.0"
     eslint-import-resolver-typescript: "npm:^3.5.2"
@@ -10102,6 +10135,7 @@ __metadata:
     eslint-plugin-storybook: "npm:^0.6.15"
     framer-motion: "npm:^10.16.16"
     husky: "npm:^8.0.2"
+    jotai: "npm:^2.6.0"
     lint-staged: "npm:^13.1.0"
     next: "npm:^14.0.4"
     next-themes: "npm:^0.2.1"
