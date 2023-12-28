@@ -25,3 +25,9 @@ export const right = style({
   alignItems: 'center',
   gap: '0.2rem',
 });
+
+export const profileLinksContainer = style({
+  display: 'flex',
+  gap: '1rem',
+  listStyleType: 'none',
+});
