@@ -24,11 +24,11 @@ globalStyle('html, body, #__next', {
 });
 
 globalStyle('html', {
-  fontSize: '14px',
+  fontSize: '13px',
 
   '@media': {
     'screen and (min-width: 768px)': {
-      fontSize: '12px',
+      fontSize: '14px',
     },
   },
 });

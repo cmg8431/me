@@ -39,6 +39,7 @@
     "@storybook/nextjs": "^8.0.0-alpha.3",
     "@storybook/react": "^8.0.0-alpha.3",
     "@storybook/test": "^8.0.0-alpha.3",
+    "@svgr/webpack": "^8.1.0",
     "@types/eslint": "^8",
     "@types/node": "^18.11.18",
     "@types/prettier": "^2",
