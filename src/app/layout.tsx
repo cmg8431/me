@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import type { Metadata } from 'next';
 
 import { Header, Toast } from '@/components';
-import { NextThemesProvider } from '@/providers';
+import { NextKBarProvider, NextThemesProvider } from '@/providers';
 import { darkTheme, font, lightTheme } from '@/styles';
 
 import * as styles from './layout.css';
@@ -20,18 +20,20 @@ export default function RootLayout({
   return (
     <html lang="ko" className={font.className}>
       <body className={styles.container}>
-        <NextThemesProvider
-          storageKey="theme"
-          attribute="class"
-          value={{
-            light: lightTheme,
-            dark: darkTheme,
-          }}
-        >
-          <Toast />
-          <Header />
-          <main>{children}</main>
-        </NextThemesProvider>
+        <NextKBarProvider>
+          <NextThemesProvider
+            storageKey="theme"
+            attribute="class"
+            value={{
+              light: lightTheme,
+              dark: darkTheme,
+            }}
+          >
+            <Toast />
+            <Header />
+            <main>{children}</main>
+          </NextThemesProvider>
+        </NextKBarProvider>
       </body>
     </html>
   );

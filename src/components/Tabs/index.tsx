@@ -25,6 +25,7 @@ export const Tabs: React.FC<TabsProps> = (props) => {
       {props.menus.map(({ to, label }, index) => {
         return (
           <li
+            key={`${label}-${index}`}
             className={styles.tabItem({ active: activeTab === index })}
             onClick={() => router.push(to)}
           >
