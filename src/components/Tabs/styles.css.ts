@@ -6,10 +6,11 @@ export const tabItemsContainer = style({
   alignItems: 'center',
   justifyContent: 'flex-start',
   padding: '0.6rem  0 0.5rem 0',
-  height: '2.4rem',
+  height: '3.6rem',
   width: '100%',
   borderBottom: '2px solid #F8F8F8 !important',
   gap: '1.2em',
+  margin: '0',
 });
 
 export const tabItem = recipe({

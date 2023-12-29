@@ -45,8 +45,6 @@ export const Header: React.FC<HeaderProps> = () => {
               );
             })}
           </div>
-          <div>search</div>
-          <div>sponsor</div>
         </div>
       </div>
       <Tabs menus={TAB_LIST} />
